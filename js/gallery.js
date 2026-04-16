@@ -75,8 +75,10 @@ const images = [
   </a>
 </li>; */
 
-const galleryList = document.querySelector('gallery');
-console.log(galleryList);
+const refs = {
+  galleryList: document.querySelector('gallery'),
+};
+console.log(refs);
 const markup = images
   .map(({ preview, original, description }) => {
     `<li class="gallery-item">
