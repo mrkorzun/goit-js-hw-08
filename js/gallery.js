@@ -76,7 +76,7 @@ const images = [
 </li>; */
 
 const refs = {
-  galleryList: document.querySelector('gallery'),
+  galleryList: document.querySelector('.gallery'),
 };
 console.log(refs);
 const markup = images
@@ -94,4 +94,4 @@ const markup = images
   })
   .join('');
 console.log(markup);
-// galleryList.innerHTML = markup;
+refs.galleryList.innerHTML = markup;
