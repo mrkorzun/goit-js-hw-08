@@ -4,15 +4,6 @@
 Основна мета проєкту — створення інтерактивної галереї з використанням прийому
 делегування подій та бібліотеки модальних вікон.
 
-```
-.
-├── index.html
-├── js/
-│ └── gallery.js
-└── css/
-└── styles.css
-```
-
 ## 🚀 Основні цілі проєкту
 
 - **Динамічна розмітка:** Генерація елементів галереї на основі масиву даних.
@@ -56,6 +47,15 @@
 - [Вихідний код](https://github.com/mrkorzun/goit-js-hw-08)
 - [Жива сторінка (GitHub Pages)](https://mrkorzun.github.io/goit-js-hw-08/)
 - [Cтилізація розмітки](https://www.figma.com/design/m8k9NQV7qZrtYDCvxfD68B/HW-JavaScript?node-id=3-941&p=f)
+
+```
+.
+├── index.html
+├── js/
+│ └── gallery.js
+└── css/
+└── styles.css
+```
 
 ---
 
