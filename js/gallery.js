@@ -81,8 +81,9 @@ const refs = {
 console.log(refs);
 
 const markup = images
-  .map(({ preview, original, description }) => {
-    `<li class="gallery-item">
+  .map(
+    ({ preview, original, description }) =>
+      `<li class="gallery-item">
         <a class="gallery-link" href="${original}">
             <img
             class="gallery-image"
@@ -91,13 +92,12 @@ const markup = images
             alt="${description}"
             />
         </a>
-    </li>`;
-  })
+    </li>`
+  )
   .join('');
-console.log(markup);
-refs.galleryList.innerHTML = markup;
 
-refs.galleryList.addEventList('click', onGalleryListClick);
+// console.log(markup);
+refs.galleryList.innerHTML = markup;
 
 function onGalleryListClick(event) {
   event.preventDefault();
@@ -106,3 +106,13 @@ function onGalleryListClick(event) {
   }
   console.log(event.target.dataset.source);
 }
+
+refs.galleryList.addEventListener('click', onGalleryListClick);
+// console.log('hello');
+// console.log(basicLightbox);
+
+
+const instance = basicLightbox.create(`
+	<h1>Dynamic Content</h1>
+	<p>You can set the content of the lightbox with JS.</p>
+` {});
