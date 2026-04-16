@@ -29,7 +29,8 @@
 - **HTML5** (семантична розмітка)
 - **CSS3** (Flexbox, Grid, стилізація згідно з макетом)
 - **JavaScript (ES6+)** (DOM-маніпуляції, обробка подій)
-- **basicLightbox** (зовнішня JS бібліотека)
+- [**basicLightbox**](https://www.npmjs.com/package/basiclightbox?activeTab=dependencies)
+  (зовнішня JS бібліотека)
 
 ---
 
