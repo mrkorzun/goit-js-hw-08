@@ -1,18 +1,44 @@
+/* Styles for Mobile devices */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @media only screen and (max-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media only screen and (max-width: 320px) {
+    max-width: 320px;
+  }
+}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
+  object-fit: cover;
+  object-position: center;
+  @media only screen and (max-width: 768px) {
+    max-width: 360px;
+  }
+  @media only screen and (max-width: 320px) {
+    max-width: 360px;
+  }
 }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
+  justify-content: center;
+  gap: 24px;
   list-style: none;
 }
 
 .gallery-item {
-  flex-basis: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.basicLightbox {
+  background: rgba(46, 47, 66, 0.8);
 }

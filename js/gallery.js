@@ -104,15 +104,12 @@ function onGalleryListClick(event) {
   if (event.target.nodeName !== 'IMG') {
     return;
   }
-  console.log(event.target.dataset.source);
+
+  const src = event.target.dataset.source;
+  const alt = event.target.alt;
+
+  const instance = basicLightbox.create(`<img src="${src}" alt="${alt}"/>`);
+  instance.show();
 }
 
 refs.galleryList.addEventListener('click', onGalleryListClick);
-// console.log('hello');
-// console.log(basicLightbox);
-
-
-const instance = basicLightbox.create(`
-	<h1>Dynamic Content</h1>
-	<p>You can set the content of the lightbox with JS.</p>
-` {});
