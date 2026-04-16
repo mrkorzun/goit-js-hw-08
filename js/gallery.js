@@ -79,6 +79,7 @@ const refs = {
   galleryList: document.querySelector('.gallery'),
 };
 console.log(refs);
+
 const markup = images
   .map(({ preview, original, description }) => {
     `<li class="gallery-item">
@@ -95,3 +96,13 @@ const markup = images
   .join('');
 console.log(markup);
 refs.galleryList.innerHTML = markup;
+
+refs.galleryList.addEventList('click', onGalleryListClick);
+
+function onGalleryListClick(event) {
+  event.preventDefault();
+  if (event.target.nodeName !== 'IMG') {
+    return;
+  }
+  console.log(event.target.dataset.source);
+}
