@@ -36,8 +36,8 @@
 
 ## 🔗 Посилання на роботу
 
-- [Вихідний код](https://github.com/Твій-Логін/goit-js-hw-08)
-- [Жива сторінка (GitHub Pages)](https://Твій-Логін.github.io/goit-js-hw-08/)
+- [Вихідний код](https://github.com/mrkorzun/goit-js-hw-08)
+- [Жива сторінка (GitHub Pages)](https://mrkorzun.github.io/goit-js-hw-08/)
 
 ---
 
